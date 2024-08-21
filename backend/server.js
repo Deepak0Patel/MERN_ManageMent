@@ -14,11 +14,13 @@ const app = express();
 // Middleware to parse JSON requests
 app.use(
   cors({
-    origin: "https://mern-manage-ment.vercel.app/", // Your frontend URL
+    origin: "https://mern-manage-ment.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
+
 app.use(express.json());
 
 // Routes

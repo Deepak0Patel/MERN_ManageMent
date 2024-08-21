@@ -14,8 +14,8 @@ const app = express();
 // Middleware to parse JSON requests
 app.use(
   cors({
-    origin: "https://mern-manage-ment.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: process.env.FRONTEND_URL || "https://mern-manage-ment.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })

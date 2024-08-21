@@ -35,7 +35,7 @@ const Login = () => {
 
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
-  const apiUrl = "https://mern-management-bz0b.onrender.com";
+  const apiUrl = "https://mern-management-bz0b.onrender.com/";
 
   const handleSubmit = async (values) => {
     console.log("data to send", values);

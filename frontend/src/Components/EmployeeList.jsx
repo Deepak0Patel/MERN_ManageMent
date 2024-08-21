@@ -21,7 +21,7 @@ import {
 } from "@mui/material";
 
 const EmployeeList = () => {
-  const apiUrl = "https://mern-management-bz0b.onrender.com";
+  const apiUrl = "https://mern-management-bz0b.onrender.com/";
   const token = useSelector((state) => state.auth.user.token);
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -29,7 +29,7 @@ import { Delete, Search } from "@mui/icons-material";
 import { toast } from "react-toastify";
 
 const DepartmentList = () => {
-  const apiUrl = "https://mern-management-bz0b.onrender.com";
+  const apiUrl = "https://mern-management-bz0b.onrender.com/";
   const [departments, setDepartments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

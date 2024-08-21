@@ -20,7 +20,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const AddPage = () => {
-  const apiUrl = "https://mern-management-bz0b.onrender.com";
+  const apiUrl = "https://mern-management-bz0b.onrender.com/";
   const token = useSelector((state) => state.auth.user.token);
   const navigate = useNavigate();
   const location = useLocation();

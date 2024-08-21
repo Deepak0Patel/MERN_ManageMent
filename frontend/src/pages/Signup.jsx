@@ -20,7 +20,7 @@ import { toast } from "react-toastify";
 
 const Register = () => {
   const navigate = useNavigate();
-  const apiUrl = import.meta.env.VITE_API_URL;
+  const apiUrl = "https://mern-management-bz0b.onrender.com";
   const [showPassword, setShowPassword] = useState(false); // Add state for password visibility
   const validationSchema = Yup.object({
     firstName: Yup.string().required("Required"),

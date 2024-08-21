@@ -35,7 +35,7 @@ const Login = () => {
 
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
-  const apiUrl = import.meta.env.VITE_API_URL;
+  const apiUrl = "https://mern-management-bz0b.onrender.com";
 
   const handleSubmit = async (values) => {
     console.log("data to send", values);

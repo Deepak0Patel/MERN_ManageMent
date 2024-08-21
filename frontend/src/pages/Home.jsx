@@ -8,7 +8,7 @@ import { logout } from "../store/features/authSlice";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Home = () => {
-  const apiUrl = import.meta.env.VITE_API_URL;
+  const apiUrl = "https://mern-management-bz0b.onrender.com";
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true); // State to manage loading
   const [error, setError] = useState(null); // State to handle errors
